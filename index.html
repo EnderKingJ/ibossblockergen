@@ -7,25 +7,18 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <input placeholder="Group Name" id="group">
-    <input placeholder="Group Number" id="groupn">
-    <input placeholder="Blocked Page" id="blocked">
-    <input placeholder="Description/Reason for Block" id="desc">
-    <input placeholder="IP Address" id="ip">
-    <input placeholder="UserName" id="user">
-    <button onclick="generate()">Generate!</button>
+    <header>
+      <h4 class="form_field">IBoss Block Page Generator</h1>
+    <div class="form__group field">
+    <input class="form__field" placeholder="Group Name" id="group">
+    <input class="form__field" placeholder="Group Number" id="groupn">
+    <input class="form__field" placeholder="Blocked Page" id="blocked">
+    <input class="form__field" placeholder="Description/Reason for Block" id="desc">
+    <input class="form__field" placeholder="IP Address" id="ip">
+    <input class="form__field" placeholder="UserName" id="user">
+    <button class="form__field" onclick="generate()">Generate!</button>
+    </div>
 
-    <script>
-      function generate() {
-var group = document.getElementById("group").value;
-var groupn = document.getElementById("groupn").value;
-var blocked = document.getElementById("blocked").value;
-var desc = document.getElementById("desc").value;
-var ip = document.getElementById("ip").value;
-var user = document.getElementById("user").value;
-
-  window.open("https://cn1759620794-7vnsr30257.ibosscloud.com/syncCustomBranding/block_page/122385/9534/9534-block_page.html?fn="+ group +"&fp="+ groupn +"&bu="+ blocked + blocked + "%2F&bc="+ desc +"&ip="+ ip +"&ibip=cn1759617723-vnsg11042.ibosscloud.com&user="+ user +"%20&ipm=cn1759617911-vnsg11308.ibosscloud.com")
-}
-    </script>
+    <script src="generate.js"></script>
   </body>
 </html>
